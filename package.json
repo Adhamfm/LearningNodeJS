@@ -1,0 +1,20 @@
+{
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "firstlearn",
+  "version": "1.0.0",
+  "description": "This is for me Adham and I am practicing and learning NodeJS",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adhamfm/LearningNodeJS.git"
+  },
+  "author": "Adhamfm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Adhamfm/LearningNodeJS/issues"
+  },
+  "homepage": "https://github.com/Adhamfm/LearningNodeJS#readme"
+}
