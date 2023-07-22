@@ -6,7 +6,6 @@
   "version": "1.0.0",
   "description": "This is for me Adham and I am practicing and learning NodeJS",
   "main": "server.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Adhamfm/LearningNodeJS.git"
@@ -16,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Adhamfm/LearningNodeJS/issues"
   },
-  "homepage": "https://github.com/Adhamfm/LearningNodeJS#readme"
+  "homepage": "https://github.com/Adhamfm/LearningNodeJS#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
