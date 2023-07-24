@@ -1,19 +1,13 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <title>About Us</title>
-</head>
+<%- include('./partials/head.ejs') %>
 
 <body>
     <header>
         <h1>About Our Website</h1>
     </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="contact.html">Contact</a>
-        <!-- You can add more navigation links here -->
-    </nav>
+    <%- include('./partials/nav.ejs') %>
     <main>
         <section>
             <h2>Who We Are</h2>
@@ -28,13 +22,9 @@
             <p>On our website, you'll find a diverse collection of articles, tutorials, and resources on various subjects. From technology and science to arts and lifestyle, we've got something for everyone.</p>
         </section>
     </main>
-    <nav>
-        <a href="/">Homepage</a>
-        <a href="/about">About Page</a>
-    </nav>
-    <footer>
-        <p>Contact us at <a href="mailto:contact@example.com">contact@example.com</a></p>
-    </footer>
+    
+
+    <%- include('./partials/footer.ejs') %>
 </body>
 
 </html>
