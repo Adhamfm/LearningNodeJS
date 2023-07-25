@@ -1,5 +1,6 @@
 // server using experss
 const express = require('express');
+const morgan = require('morgan');
 
 //express app
 const app = express();
@@ -10,6 +11,11 @@ app.set('view engine', 'ejs');
 // Listen for requests
 app.listen(3000);
 
+// Middleware & static files
+app.use(express.static('public'));
+app.use(morgan('dev'));
+
+
 const blogs = [
     { title: 'first', snippet: "adhasdf asdfhajksd adfjhn asldkfjhasd asdufihsad" },
     { title: 'second', snippet: "qertqweyrdfhety ueujhn asldkfjhaeuetusd asdufihsad" },
@@ -17,18 +23,15 @@ const blogs = [
 
 app.get('/', (req, res) => {
     //res.send()
-    console.log(req.url, req.method);
     res.render('index', { title: 'Parrot Blog', blogs });
 });
 
 app.get('/about', (req, res) => {
-    console.log(req.url, req.method);
     res.render('about', { title: 'About Adhamfm' });
 });
 
 // redirects
 app.get('/blogs/create', (req, res) => {
-    console.log(req.url, req.method);
     res.render('create', { title: 'Create Blogs' });
 });
 
