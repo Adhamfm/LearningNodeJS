@@ -30,7 +30,7 @@ router.get('/:id', (req, res) => {
         .then(result => {
             res.render('details', { title: "Blog Details", blog: result })
         })
-        .catch(err => console.log(err));
+        .catch(err => res.render('404', { title: '404 - Page Not Found | 404' }));
 });
 
 router.delete('/:id', (req, res) => {
